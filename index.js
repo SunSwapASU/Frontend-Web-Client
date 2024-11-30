@@ -6,6 +6,7 @@ const registerButton = document.getElementById('registerButton');
 const loginButton = document.getElementById('loginButton');
 const restrictedButton = document.getElementById('restrictedButton');
 const logoutButton = document.getElementById('logoutButton');
+const createItemButton = document.getElementById('createItemButton');
 
 const responseMessage = document.getElementById('response_message');
 
@@ -14,6 +15,8 @@ registerButton.addEventListener('click', registerUser);
 loginButton.addEventListener('click', loginUser);
 restrictedButton.addEventListener('click', restricted);
 logoutButton.addEventListener('click', logout);
+logoutButton.addEventListener('click', logout);
+createItemButton.addEventListener('click', createItem);
 
 
 async function loginUser(e) {
@@ -107,3 +110,57 @@ async function logout(e) {
 
     console.log(message);
 }
+
+async function createItem(e) {
+    e.preventDefault();
+
+    responseMessage.innerText = "Loading...";
+
+    let res = await fetch('http://127.0.0.1:3000/private/item/create', {
+        method: 'POST',
+        mode: "cors",
+        credentials: "include",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            "name": "Kettle",
+            "condition": "New",
+            "description": "brand new kettle, never used. still in original packaging, contact me for more information.",
+            "categoryName": "Kitchen",
+        })
+    });
+
+    let msg = await res.json();
+
+    responseMessage.innerText = JSON.stringify(msg);
+
+    console.log(msg);
+}
+
+// async function searchKitchenCat(e) {
+//     e.preventDefault();
+
+//     responseMessage.innerText = "Loading...";
+
+//     let res = await fetch('http://127.0.0.1:3000/private/item/create', {
+//         method: 'POST',
+//         mode: "cors",
+//         credentials: "include",
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//             "name": "kettle",
+//             "condition": "new",
+//             "description": "brand new kettle, never used. still in original packaging, contact me for more information.",
+//             "categories": ["kitchen", "appliance"],
+//         })
+//     });
+
+//     let msg = await res.json();
+
+//     responseMessage.innerText = JSON.stringify(msg);
+
+//     console.log(msg);
+// }
