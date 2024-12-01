@@ -7,7 +7,7 @@
     <title>SunSwap Login</title>
 
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
 </head>
 
 <body>
@@ -24,17 +24,20 @@
         <hr>
     </div>
 
-    <div>
-        <h1 class="banner_text">Log in to your Swap Account!</h1>
-        <form action="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
+    <div class="account_action_container">
+        <h1 class="banner_text">Log in to your Swap account!</h1>
+        <form>
+            <input placeholder="Username" type="text" name="username" class="action_username" required>
+            <input placeholder="Email" type="email" name="email" class="action_email" pattern="\w+@\w+\.\w+">
+            <input placeholder="Password" type="password" name="password" class="action_password" required>
 
-            <input type="submit" name="" id="">
+            <button type="submit" id="submit_button" onclick="loginSubmit">Login</button>
+
+            <p>Don't have an account? <a href="/register.html">register here!</a></p>
         </form>
     </div>
 
-    <footer>&#169 2024, All rights reserved.</footer>
+    <!-- <footer>&#169 2024, All rights reserved.</footer> -->
 </body>
 
 </html>
