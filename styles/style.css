@@ -1,16 +1,16 @@
 @font-face {
     font-family: "MonsterratBoldItalic";
-    src: url("./assets/fonts/Monsterrat/static/Montserrat-BoldItalic.ttf");
+    src: url("../assets/fonts/Monsterrat/static/Montserrat-BoldItalic.ttf");
 }
 
 @font-face {
     font-family: "MonsterratBold";
-    src: url("./assets/fonts/Monsterrat/static/Montserrat-Bold.ttf");
+    src: url("../assets/fonts/Monsterrat/static/Montserrat-Bold.ttf");
 }
 
 @font-face {
     font-family: "MonsterratRegular";
-    src: url("./assets/fonts/Monsterrat/static/Montserrat-Regular.ttf");
+    src: url("../assets/fonts/Monsterrat/static/Montserrat-Regular.ttf");
 }
 
 body {
@@ -25,7 +25,7 @@ body * {
 
 #page_heading {
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #heading_logo {
@@ -41,7 +41,7 @@ body * {
 
 #page_heading>nav>a {
     display: inline-block;
-    background-image: url("assets/images/underline_arrow.svg");
+    background-image: url("../assets/images/underline_arrow.svg");
     background-size: contain;
     background-position: 0 2em;
     background-repeat: no-repeat;
@@ -67,6 +67,7 @@ hr {
     height: 30em;
     display: flex;
     gap: 1em;
+    margin-bottom: 1em;
 }
 
 #banner_block>h1 {
@@ -88,8 +89,24 @@ hr {
 
 #banner_underline_arrow {
     display: inline-block;
-    background-image: url("assets/images/underline_arrow.svg");
+    background-image: url("../assets/images/underline_arrow.svg");
     background-size: contain;
     background-position: 0 0.7em;
     background-repeat: no-repeat;
+}
+
+#page_transition {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#century_img {
+    width: 70em;
+}
+
+#down_arrows {
+    width: 10em;
 }
