@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SunSwap</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
 </head>
 
 <body>
-    <form>
-        <input type="text" id="username" placeholder="username">
-        <br>
-        <input type="email" id="email" placeholder="email">
-        <br>
-        <input type="password" id="password" placeholder="password">
-        <br>
-        <button type="submit" id="registerButton">Register</button>
-        <button type="submit" id="loginButton">Login</button>
-        <button type="submit" id="logoutButton">Logout</button>
-        <button type="submit" id="restrictedButton">Restricted</button>
-        <button type="submit" id="createItemButton">Create Item</button>
-    </form>
+    <div id="page_heading">
+        <img id="heading_logo" src="assets/images/heading_logo.svg" alt="SunSwap Logo">
 
-    <code id="response_message"></code>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <script src="index.js"></script>
+        <hr>
+    </div>
+
+    <div id="banner_block">
+        <h1>The platform for your on-campus living <span id="banner_underline_arrow">needs!</span></h1>
+        <p><span>Save money on dorm supplies by automatically matching with fellow sun devils who are giving items
+                away!</span>
+        </p>
+    </div>
+
+
 </body>
 
 </html>

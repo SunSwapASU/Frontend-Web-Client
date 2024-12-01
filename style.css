@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "MonsterratBoldItalic";
+    src: url("./assets/fonts/Monsterrat/static/Montserrat-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "MonsterratBold";
+    src: url("./assets/fonts/Monsterrat/static/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "MonsterratRegular";
+    src: url("./assets/fonts/Monsterrat/static/Montserrat-Regular.ttf");
+}
+
+body {
+    background-color: #222222;
+    padding: 0 3em;
+}
+
+body * {
+    font-family: "MonsterratRegular";
+    color: white;
+}
+
+#page_heading {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#heading_logo {
+    height: 8em;
+}
+
+#page_heading>nav {
+    float: right;
+    height: 6.5em;
+    display: flex;
+    align-items: end;
+}
+
+#page_heading>nav>a {
+    display: inline-block;
+    background-image: url("assets/images/underline_arrow.svg");
+    background-size: contain;
+    background-position: 0 2em;
+    background-repeat: no-repeat;
+    transition: background-position 0.2s;
+}
+
+#page_heading>nav>a:hover {
+    background-position: 0 0.7em;
+}
+
+#page_heading>nav>* {
+    text-decoration: none;
+    margin-left: 2em;
+    font-size: 1.5em;
+    font-family: "MonsterratBold";
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.17);
+}
+
+#banner_block {
+    height: 30em;
+    display: flex;
+    gap: 1em;
+}
+
+#banner_block>h1 {
+    font-size: 4.5em;
+    font-family: "MonsterratBoldItalic";
+    flex: 1;
+}
+
+#banner_block>p {
+    display: flex;
+    font-size: 2.5em;
+    align-items: end;
+    flex: 1;
+}
+
+#banner_block span {
+    font-family: inherit;
+}
+
+#banner_underline_arrow {
+    display: inline-block;
+    background-image: url("assets/images/underline_arrow.svg");
+    background-size: contain;
+    background-position: 0 0.7em;
+    background-repeat: no-repeat;
+}
