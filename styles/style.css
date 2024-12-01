@@ -13,6 +13,11 @@
     src: url("../assets/fonts/Monsterrat/static/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: "MonsterratRegularItalic";
+    src: url("../assets/fonts/Monsterrat/static/Montserrat-Italic.ttf");
+}
+
 body {
     background-color: #222222;
     padding: 0 3em;
@@ -41,15 +46,15 @@ body * {
 
 #page_heading>nav>a {
     display: inline-block;
-    background-image: url("../assets/images/underline_arrow.svg");
+    background-image: url("../assets/images/underline_arrow_gold.svg");
     background-size: contain;
-    background-position: 0 2em;
+    background-position: -10em 0.72em;
     background-repeat: no-repeat;
     transition: background-position 0.2s;
 }
 
 #page_heading>nav>a:hover {
-    background-position: 0 0.7em;
+    background-position: 0 0.72em;
 }
 
 #page_heading>nav>* {
@@ -67,12 +72,10 @@ hr {
     height: 30em;
     display: flex;
     gap: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 #banner_block>h1 {
-    font-size: 4.5em;
-    font-family: "MonsterratBoldItalic";
     flex: 1;
 }
 
@@ -87,26 +90,77 @@ hr {
     font-family: inherit;
 }
 
-#banner_underline_arrow {
+.underline_arrow_gold {
     display: inline-block;
-    background-image: url("../assets/images/underline_arrow.svg");
+    background-image: url("../assets/images/underline_arrow_gold.svg");
     background-size: contain;
-    background-position: 0 0.7em;
+    background-position: 0 0.72em;
     background-repeat: no-repeat;
+    font-family: inherit;
 }
 
-#page_transition {
+.underline_arrow_maroon {
+    display: inline-block;
+    background-image: url("../assets/images/underline_arrow_maroon.svg");
+    background-size: contain;
+    background-position: 0 0.72em;
+    background-repeat: no-repeat;
+    font-family: inherit;
+}
+
+.banner_text {
+    font-size: 4.5em;
+    font-family: "MonsterratBoldItalic";
+}
+
+#crow_quote_container {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    position: absolute;
-    left: 0;
+    margin-left: -6em;
+    margin-bottom: 7em;
+    align-items: center;
 }
 
-#century_img {
-    width: 70em;
+#crow_quote_container>img {
+    width: 20em;
+    aspect-ratio: 16/9;
+    flex: 2;
+    clip-path: polygon(0% 0%, 100% 0%, 87% 50%, 100% 100%, 0% 100%);
 }
 
-#down_arrows {
-    width: 10em;
+#crow_quote_container>p {
+    flex: 1;
+    font-size: 1.5em;
+    font-family: "MonsterratRegularItalic";
+}
+
+#benefits_main_header {
+    text-align: center;
+}
+
+#key_benefits_container {
+    display: flex;
+    gap: 3em;
+    margin-bottom: 8em;
+}
+
+#key_benefits_container h2 {
+    font-family: "MonsterratBold";
+}
+
+#key_benefits_container p {
+    font-size: 1.5em;
+}
+
+#testimonials_container {
+    display: flex;
+}
+
+#testimonials_container>h1 {
+    flex: 1;
+}
+
+#testimonials_container>div {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
 }
