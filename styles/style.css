@@ -184,3 +184,10 @@ hr {
     border-radius: 50%;
     margin-right: 2em;
 }
+
+footer {
+    text-align: center;
+    font-family: "MonsterratBold";
+    padding: 1em;
+    font-size: 1.5em;
+}
