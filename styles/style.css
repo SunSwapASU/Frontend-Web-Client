@@ -28,7 +28,7 @@ body * {
     color: white;
 }
 
-#page_heading {
+.page_heading {
     margin-top: 1em;
 }
 
@@ -36,14 +36,14 @@ body * {
     height: 8em;
 }
 
-#page_heading>nav {
+.page_heading>nav {
     float: right;
     height: 6.5em;
     display: flex;
     align-items: end;
 }
 
-#page_heading>nav>a {
+.page_heading>nav>a {
     display: inline-block;
     background-image: url("../assets/images/underline_arrow_gold.svg");
     background-size: contain;
@@ -52,11 +52,11 @@ body * {
     transition: background-position 0.2s;
 }
 
-#page_heading>nav>a:hover {
+.page_heading>nav>a:hover {
     background-position: 0 0.72em;
 }
 
-#page_heading>nav>* {
+.page_heading>nav>* {
     text-decoration: none;
     margin-left: 2em;
     font-size: 1.5em;
@@ -221,10 +221,52 @@ footer {
 }
 
 .action_email:invalid {
-    background-color: rgb(133, 62, 62);
+    background-color: #853e3e;
 }
 
 .account_action_container button {
     background-color: white;
     color: #222222;
+    transition: background-color 0.1s;
+}
+
+.account_action_container button:hover {
+    background-color: #FFC627;
+}
+
+#contact_banner {
+    text-align: center;
+}
+
+#contact_banner>p {
+    font-family: "MonsterratRegular";
+    font-size: 1.5em;
+    max-width: 35em;
+    margin: 0 auto 3em auto;
+}
+
+#contact_cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact_cards>div {
+    border-radius: 1em;
+    padding: 2em;
+    background-color: #414141;
+    max-width: 15em;
+}
+
+#contact_cards>div>* {
+    display: flex;
+    justify-content: center;
+}
+
+.emph_contact_info {
+    font-family: "MonsterratBold";
+}
+
+#contact_cards img {
+    width: 5em;
+    margin: auto;
 }
