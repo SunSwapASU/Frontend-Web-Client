@@ -30,7 +30,6 @@ body * {
 
 #page_heading {
     margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 #heading_logo {
@@ -66,6 +65,7 @@ body * {
 
 hr {
     border-color: rgba(255, 255, 255, 0.17);
+    margin: 1em 0;
 }
 
 #banner_block {
@@ -140,7 +140,7 @@ hr {
 #key_benefits_container {
     display: flex;
     gap: 3em;
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
 
 #key_benefits_container h2 {
@@ -153,6 +153,8 @@ hr {
 
 #testimonials_container {
     display: flex;
+    margin-top: 5em;
+    gap: 2em;
 }
 
 #testimonials_container>h1 {
@@ -161,6 +163,24 @@ hr {
 
 #testimonials_container>div {
     display: flex;
-    flex: 1;
-    flex-direction: row;
+    flex: 1.5;
+    flex-direction: column;
+}
+
+#testimonials_container>div>div {
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+}
+
+#testimonials_container p {
+    font-family: "MonsterratRegularItalic";
+    font-size: 1.5em;
+}
+
+#testimonials_container img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin-right: 2em;
 }
