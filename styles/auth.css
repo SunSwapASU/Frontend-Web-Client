@@ -1,0 +1,41 @@
+.account_action_container {
+    display: flex;
+    margin-top: 6em;
+}
+
+.account_action_container>h1 {
+    flex: 1;
+}
+
+.account_action_container>form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1em;
+    max-width: 25em;
+    font-size: 1.5em;
+}
+
+.account_action_container input,
+.action_email[value=""],
+.account_action_container button {
+    border: none;
+    background-color: #4e4e4e;
+    border-radius: 0.25em;
+    padding: 1em;
+    font-family: "MonsterratBold";
+}
+
+.action_email:invalid {
+    background-color: #853e3e;
+}
+
+.account_action_container button {
+    background-color: white;
+    color: #222222;
+    transition: background-color 0.1s;
+}
+
+.account_action_container button:hover {
+    background-color: #FFC627;
+}

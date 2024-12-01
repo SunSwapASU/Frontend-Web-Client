@@ -1,0 +1,56 @@
+.emph_contact_info {
+    font-family: "MonsterratBold";
+}
+
+#contact_banner {
+    text-align: center;
+}
+
+#contact_banner>p {
+    font-family: "MonsterratRegular";
+    font-size: 1.5em;
+    max-width: 35em;
+    margin: 0 auto 3em auto;
+}
+
+#contact_cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+#contact_cards>div {
+    border-radius: 1em;
+    padding: 2em;
+    background-color: #414141;
+    max-width: 15em;
+}
+
+#contact_cards>div>* {
+    display: flex;
+    justify-content: center;
+}
+
+#contact_cards img {
+    width: 5em;
+    margin: auto;
+}
+
+#socials_container {
+    display: flex;
+    margin: 2em auto;
+    width: 10em;
+    justify-content: space-between;
+}
+
+#socials_container img {
+    width: 2em;
+    height: 2em;
+}
+
+#socials_paragraph {
+    max-width: 35em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+}
