@@ -28,13 +28,13 @@
     <div class="account_action_container">
         <h1 class="banner_text">Create your Swap account!</h1>
         <form>
-            <input placeholder="Username" type="text" name="username" id="register_username" required>
-            <input placeholder="Email" type="email" name="email" id="register_email" pattern="\w+@\w+\.\w+">
-            <input placeholder="Password" type="password" name="password" id="register_password" required>
+            <input placeholder="Username" type="text" name="username" class="action_username" required>
+            <input placeholder="Email" type="email" name="email" class="action_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}">
+            <input placeholder="Password" type="password" name="password" class="action_password" required>
 
-            <button type="submit" id="submit_button" onclick="registerSubmit">Register</button>
+            <button type="submit" id="submit_button" onclick="registerSubmit()">Register</button>
 
-            <p>Already have an account? <a href="/login.html">Log in here!</a></p>
+            <p>Already have an account? <a href="login.html">Log in here!</a></p>
         </form>
     </div>
 </body>
