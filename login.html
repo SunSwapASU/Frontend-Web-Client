@@ -28,7 +28,7 @@
     <div class="account_action_container">
         <h1 class="banner_text">Log in to your Swap account!</h1>
         <form>
-            <input placeholder="Email" type="email" name="email" class="action_email" pattern="\w+@\w+\.\w+">
+            <input placeholder="Email" type="email" name="email" class="action_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}">
             <input placeholder="Password" type="password" name="password" class="action_password" required>
 
             <button type="submit" id="submit_button" onclick="loginSubmit">Login</button>
@@ -36,8 +36,6 @@
             <p>Don't have an account? <a href="/register.html">Register here!</a></p>
         </form>
     </div>
-
-    <!-- <footer>&#169 2024, All rights reserved.</footer> -->
 </body>
 
 </html>
