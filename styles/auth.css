@@ -17,17 +17,12 @@
 }
 
 .account_action_container input,
-.action_email[value=""],
 .account_action_container button {
     border: none;
     background-color: #4e4e4e;
     border-radius: 0.25em;
     padding: 1em;
     font-family: "MonsterratBold";
-}
-
-.action_email:invalid {
-    background-color: #853e3e;
 }
 
 .account_action_container button {
