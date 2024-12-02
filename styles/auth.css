@@ -12,7 +12,7 @@
     flex-direction: column;
     flex: 1;
     gap: 1em;
-    max-width: 25em;
+    max-width: 21em;
     font-size: 1.5em;
 }
 
@@ -38,4 +38,5 @@
 
 .account_action_container button:hover {
     background-color: #FFC627;
+    cursor: pointer;
 }
