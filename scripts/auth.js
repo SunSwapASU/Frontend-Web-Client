@@ -77,22 +77,3 @@ async function logoutUser(e) {
 
     window.location.assign("login.html")
 }
-
-// async function restricted(e) {
-//     e.preventDefault();
-
-//     responseMessage.innerText = "Loading...";
-
-//     let res = await fetch('http://127.0.0.1:3000/private/user/getAll', {
-//         method: 'GET',
-//         mode: "cors",
-//         credentials: "include",
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//     });
-
-//     let resp_data = await res.json();
-
-//     // ewedwed
-// }
