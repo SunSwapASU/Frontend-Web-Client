@@ -1,13 +1,13 @@
-.account_action_container {
+.form_page_container {
     display: flex;
     margin-top: 6em;
 }
 
-.account_action_container>h1 {
+.form_page_container>h1 {
     flex: 1;
 }
 
-.account_action_container>form {
+.form_page_container>form {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -16,22 +16,23 @@
     font-size: 1.5em;
 }
 
-.account_action_container input,
-.account_action_container button {
+.form_page_container input,
+.form_page_container button,
+.form_page_container textarea {
     border: none;
     background-color: #4e4e4e;
     border-radius: 0.25em;
     padding: 1em;
-    font-family: "MonsterratBold";
+    font-family: "MontserratBold";
 }
 
-.account_action_container button {
+.form_page_container button {
     background-color: white;
     color: #222222;
     transition: background-color 0.1s;
 }
 
-.account_action_container button:hover {
+.form_page_container button:hover {
     background-color: #FFC627;
     cursor: pointer;
 }

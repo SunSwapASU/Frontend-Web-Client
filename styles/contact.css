@@ -1,5 +1,5 @@
 .emph_contact_info {
-    font-family: "MonsterratBold";
+    font-family: "MontserratBold";
 }
 
 #contact_banner {
@@ -7,7 +7,7 @@
 }
 
 #contact_banner>p {
-    font-family: "MonsterratRegular";
+    font-family: "MontserratRegular";
     font-size: 1.5em;
     max-width: 35em;
     margin: 0 auto 3em auto;

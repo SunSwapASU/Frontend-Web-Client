@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "MonsterratBoldItalic";
-    src: url("../assets/fonts/Monsterrat/static/Montserrat-BoldItalic.ttf");
+    font-family: "MontserratBoldItalic";
+    src: url("../assets/fonts/Montserrat/static/Montserrat-BoldItalic.ttf");
 }
 
 @font-face {
-    font-family: "MonsterratBold";
-    src: url("../assets/fonts/Monsterrat/static/Montserrat-Bold.ttf");
+    font-family: "MontserratBold";
+    src: url("../assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "MonsterratRegular";
-    src: url("../assets/fonts/Monsterrat/static/Montserrat-Regular.ttf");
+    font-family: "MontserratRegular";
+    src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: "MonsterratRegularItalic";
-    src: url("../assets/fonts/Monsterrat/static/Montserrat-Italic.ttf");
+    font-family: "MontserratRegularItalic";
+    src: url("../assets/fonts/Montserrat/static/Montserrat-Italic.ttf");
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 body * {
-    font-family: "MonsterratRegular";
+    font-family: "MontserratRegular";
     color: white;
 }
 
@@ -35,7 +35,7 @@ hr {
 
 footer {
     text-align: center;
-    font-family: "MonsterratRegular";
+    font-family: "MontserratRegular";
     padding: 1em;
     font-size: 1.5em;
 }
@@ -72,7 +72,7 @@ footer {
     text-decoration: none;
     margin-left: 2em;
     font-size: 1.5em;
-    font-family: "MonsterratBold";
+    font-family: "MontserratBold";
 }
 
 .underline_arrow_gold {
@@ -95,5 +95,5 @@ footer {
 
 .banner_text {
     font-size: 4.5em;
-    font-family: "MonsterratBoldItalic";
+    font-family: "MontserratBoldItalic";
 }

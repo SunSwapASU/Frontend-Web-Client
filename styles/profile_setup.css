@@ -1,0 +1,13 @@
+.form_page_container {
+    margin-top: 2em !important;
+    gap: 3em;
+}
+
+.form_page_container>div {
+    flex: 1;
+}
+
+.form_page_container>div>p {
+    font-family: "MontserratRegular";
+    font-size: 1.5em;
+}

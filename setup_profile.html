@@ -7,6 +7,8 @@
     <title>Profile Setup</title>
 
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/profile_setup.css">
+    <link rel="stylesheet" href="styles/form_page.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
 </head>
 
@@ -25,19 +27,25 @@
         <hr>
     </div>
 
-    <h1 class="banner_text">Setup your Swap account!</h1>
-    <p>Your public profile helps fellow Sun Devils learn more about you and builds trust when exchanging items. Take a minute to set it up!</p>
+    <div class="form_page_container">
+        <div>
+            <h1 class="banner_text">Setup your Swap account!</h1>
+            <p>Your public profile helps fellow Sun Devils learn more about you and builds trust when exchanging items. Take a minute to set it up!</p>
+        </div>
 
-    <form>
-        <input type="text" name="fullname" id="fullname">
+        <form>
+            <input placeholder="First and last name" type="text" name="fullname" id="fullname">
 
-        <input type="text" name="preferred_contact" id="preferred_contact">
-        <input type="text" name="home_campus" id="home_campus"> <!--  dropdown -->
+            <input placeholder="Preferred contact (e.g. 4805551010 or student@email.com)" type="text" name="preferred_contact" id="preferred_contact">
+            <input placeholder="Home campus (e.g. Polytechnic or Tempe)" type="text" name="home_campus" id="home_campus"> <!--  dropdown -->
 
-        <input type="text" name="major" id="major">
-        <input type="number" name="grad_year" id="grad_year">
-        <textarea name="bio" id="bio"></textarea>
-    </form>
+            <input placeholder="Major (e.g. Computer Science or Business)" type="text" name="major" id="major">
+            <input placeholder="Graduation year" type="number" name="grad_year" id="grad_year">
+            <textarea placeholder="Bio" rows="5" name="bio" id="bio"></textarea>
+
+            <button type="submit" id="save_profile" onclick="saveProfile(event)">Save</button>
+        </form>
+    </div>
 
 </body>
 
