@@ -93,7 +93,12 @@ footer {
     font-family: inherit;
 }
 
-.banner_text {
+.h1_banner_text {
     font-size: 4.5em;
+    font-family: "MontserratBoldItalic";
+}
+
+.h2_banner_text {
+    font-size: 3em;
     font-family: "MontserratBoldItalic";
 }
