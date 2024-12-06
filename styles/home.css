@@ -91,3 +91,25 @@
     border-radius: 50%;
     margin-right: 2em;
 }
+
+#pickup_site {
+    display: flex;
+    gap: 3em;
+    margin: 6em 0;
+    align-items: center;
+}
+
+#pickup_site div {
+    flex: 2;
+}
+
+#pickup_site iframe {
+    height: 35em;
+    border: 0;
+    flex: 3;
+}
+
+#pickup_site p {
+    font-family: "MontserratRegular";
+    font-size: 1.5em;
+}
