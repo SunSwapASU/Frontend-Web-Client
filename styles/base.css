@@ -40,6 +40,10 @@ footer {
     font-size: 1.5em;
 }
 
+a {
+    cursor: pointer;
+}
+
 .page_heading {
     margin-top: 1em;
 }

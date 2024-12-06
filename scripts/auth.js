@@ -1,79 +1,89 @@
+"use strict";
+
 async function loginSubmit(e) {
     e.preventDefault();
 
-    // let email = document.getElementById('login_email').value;
-    // let password = document.getElementById('login_password').value;
+    let email = document.getElementById('login_email').value;
+    let password = document.getElementById('login_password').value;
+    let status_indicator = document.getElementById('status_indicator');
 
-    // let res = await fetch('http://127.0.0.1:3000/auth/login', {
-    //     method: 'POST',
-    //     mode: "cors",
-    //     credentials: "include",
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify({ email, password }),
-    // });
+    status_indicator.innerText = "Logging you in...";
+    status_indicator.style.color = "white";
+    status_indicator.style.display = "block";
 
-    // let resp_data = await res.json();
+    let res = await fetch('http://127.0.0.1:3000/auth/login', {
+        method: 'POST',
+        mode: "cors",
+        credentials: "include",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+    });
 
-    // if (res.ok) {
-    //     localStorage.setItem("session_info", JSON.stringify(resp_data))
-    //     window.location.assign("profile.html");
-    // } else {
-    //     console.log(resp_data);
-    //     alert(JSON.stringify(resp_data))
-    // }
+    let resp_data = await res.json();
 
-    window.location.assign("profile.html");
+    if (res.ok) {
+        localStorage.setItem("session_info", JSON.stringify(resp_data));
+        window.location.assign("profile.html");
+    } else {
+        status_indicator.innerText = resp_data.message;
+        status_indicator.style.color = "red";
+
+        setTimeout(() => {
+            status_indicator.style.display = "none";
+        }, 4000);
+    }
 }
 
 async function registerSubmit(e) {
     e.preventDefault();
 
-    // let email = document.getElementById('register_email').value;
-    // let username = document.getElementById('register_username').value;
-    // let password = document.getElementById('register_password').value;
+    let username = document.getElementById('register_username').value;
+    let email = document.getElementById('register_email').value;
+    let password = document.getElementById('register_password').value;
+    let status_indicator = document.getElementById('status_indicator');
 
-    // let res = await fetch('http://127.0.0.1:3000/auth/register', {
-    //     method: 'POST',
-    //     mode: "cors",
-    //     credentials: "include",
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify({ username, email, password }),
-    // });
+    status_indicator.innerText = "Registering your account...";
+    status_indicator.style.color = "white";
+    status_indicator.style.display = "block";
 
-    // let resp_data = await res.json();
+    let res = await fetch('http://127.0.0.1:3000/auth/register', {
+        method: 'POST',
+        mode: "cors",
+        credentials: "include",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, email, password }),
+    });
 
-    // if (res.ok) {
-    //     window.location.assign("setup_profile.html");
-    // } else {
-    //     console.log(resp_data);
-    //     alert(JSON.stringify(resp_data))
-    // }
+    let resp_data = await res.json();
 
-    window.location.assign("setup_profile.html");
+    if (res.ok) {
+        localStorage.setItem("session_info", JSON.stringify(resp_data));
+        window.location.assign("profile.html");
+    } else {
+        status_indicator.innerText = resp_data.message;
+        status_indicator.style.color = "red";
 
+        setTimeout(() => {
+            status_indicator.style.display = "none";
+        }, 4000);
+    }
 }
 
-async function logoutUser(e) {
+function logoutUser(e) {
     e.preventDefault();
 
-    // let res = await fetch('http://127.0.0.1:3000/auth/logout', {
-    //     method: 'POST',
-    //     mode: "cors",
-    //     credentials: "include",
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    // });
-
-    // let { message } = await res.json();
-
-    // responseMessage.innerText = message;
-
-    // console.log(message);
+    fetch('http://127.0.0.1:3000/auth/logout', {
+        method: 'POST',
+        mode: "cors",
+        credentials: "include",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
 
     window.location.assign("login.html")
 }
