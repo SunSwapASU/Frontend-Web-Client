@@ -1,0 +1,20 @@
+#main_content p {
+    font-family: "MontserratBold";
+}
+
+#post_listing_bttn {
+    border: none;
+    background-color: #4e4e4e;
+    border-radius: 0.25em;
+    padding: 1em;
+    font-family: "MontserratBold";
+    font-size: 1em;
+    margin: 1em 0;
+    transition: background-color 0.1s;
+}
+
+#post_listing_bttn:hover {
+    background-color: #FFC627;
+    cursor: pointer;
+    color: #222222;
+}

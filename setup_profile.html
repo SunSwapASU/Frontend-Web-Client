@@ -37,8 +37,13 @@
             <input placeholder="First and last name" type="text" name="fullname" id="fullname">
 
             <input placeholder="Preferred contact (e.g. 4805551010 or student@email.com)" type="text" name="preferred_contact" id="preferred_contact">
-            <input placeholder="Home campus (e.g. Polytechnic or Tempe)" type="text" name="home_campus" id="home_campus"> <!--  dropdown -->
-
+            <input list="campus_list" placeholder="Home campus (e.g. Polytechnic or Tempe)" type="text" name="home_campus" id="home_campus"> <!--  dropdown -->
+            <datalist id="campus_list">
+                <option value="Tempe">
+                <option value="Polytechnic">
+                <option value="Downtown Phoenix">
+                <option value="West">
+            </datalist>
             <input placeholder="Major (e.g. Computer Science or Business)" type="text" name="major" id="major">
             <input placeholder="Graduation year" type="number" name="grad_year" id="grad_year">
             <textarea placeholder="Bio" rows="5" name="bio" id="bio"></textarea>

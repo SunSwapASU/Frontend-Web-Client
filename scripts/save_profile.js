@@ -3,3 +3,4 @@ async function saveProfile(e) {
 
     window.location.assign("profile.html")
 }
+

@@ -1,10 +1,15 @@
 .form_page_container {
     display: flex;
     margin-top: 6em;
+    gap: 3em
 }
 
-.form_page_container>h1 {
+.form_page_container>*:first-child {
     flex: 1;
+}
+
+.form_page_container>*:first-child p {
+    font-size: 1.5em;
 }
 
 .form_page_container>form {
