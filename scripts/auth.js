@@ -11,7 +11,7 @@ async function loginSubmit(e) {
     status_indicator.style.color = "white";
     status_indicator.style.display = "block";
 
-    let res = await fetch('https://ssbe.brano.dev/auth/login', {
+    let res = await fetch('http://127.0.0.1:3000/auth/login', {
         method: 'POST',
         mode: "cors",
         credentials: "include",
@@ -48,7 +48,7 @@ async function registerSubmit(e) {
     status_indicator.style.color = "white";
     status_indicator.style.display = "block";
 
-    let res = await fetch('https://ssbe.brano.dev/auth/register', {
+    let res = await fetch('http://127.0.0.1:3000/auth/register', {
         method: 'POST',
         mode: "cors",
         credentials: "include",
@@ -76,7 +76,7 @@ async function registerSubmit(e) {
 function logoutUser(e) {
     e.preventDefault();
 
-    fetch('https://ssbe.brano.dev/auth/logout', {
+    fetch('http://127.0.0.1:3000/auth/logout', {
         method: 'POST',
         mode: "cors",
         credentials: "include",
