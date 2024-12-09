@@ -2,6 +2,10 @@
 
 let session_info = JSON.parse(localStorage.getItem("session_info"));
 
+if (!session_info) {
+    window.location.assign("login.html");
+}
+
 document.getElementById('populate_username').innerText = session_info.username;
 document.getElementById('populate_full_name').innerText = session_info.full_name;
 document.getElementById('populate_preferred_contact').innerText = session_info.preferred_contact;

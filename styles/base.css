@@ -61,7 +61,7 @@ a {
 
 .page_heading>nav>a {
     display: inline-block;
-    background-image: url("../assets/images/underline_arrow_gold.svg");
+    background-image: url("../assets/images/text_decor/underline_arrow_gold.svg");
     background-size: contain;
     background-position: -10em 0.72em;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ a {
 
 .underline_arrow_gold {
     display: inline-block;
-    background-image: url("../assets/images/underline_arrow_gold.svg");
+    background-image: url("../assets/images/text_decor/underline_arrow_gold.svg");
     background-size: contain;
     background-position: 0 0.72em;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ a {
 
 .underline_arrow_maroon {
     display: inline-block;
-    background-image: url("../assets/images/underline_arrow_maroon.svg");
+    background-image: url("../assets/images/text_decor/underline_arrow_maroon.svg");
     background-size: contain;
     background-position: 0 0.72em;
     background-repeat: no-repeat;
