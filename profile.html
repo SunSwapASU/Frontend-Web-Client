@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/items.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
 </head>
 
@@ -26,49 +27,71 @@
         <hr>
     </div>
 
-    <div id="main_content">
-        <h1 class="h2_banner_text">Welcome, <span id="populate_welcome_msg_name"></span>!</h1>
+    <div class="main_content">
+        <div id="profile_info">
+            <div>
+                <img src="assets/images/profile_picture.jpg" alt="Profile Picture">
+            </div>
 
-        <p id="contact">Preferred Contact: <span id="populate_contact"></span></p>
-        <p id="home_campus">Home Campus: <span id="populate_home_campus"></span></p>
-        <p id="major">Major: <span id="populate_major"></span></p>
-        <p id="grad_year">Graduation Year: <span id="populate_grad_year"></span></p>
-        <p id="bio">Bio: <span id="populate_profile_bio"></span></p>
+            <div>
+                <h1 class="h2_banner_text">Welcome, <span id="populate_welcome_msg_name"></span>!</h1>
 
-        <!-- <button id="edit_profile_bottom">Edit profile</button> -->
+                <p id="contact">Preferred Contact: <span id="populate_contact"></span></p>
+                <p id="home_campus">Home Campus: <span id="populate_home_campus"></span></p>
+                <p id="major">Major: <span id="populate_major"></span></p>
+                <p id="grad_year">Graduation Year: <span id="populate_grad_year"></span></p>
+                <p id="bio">Bio: <span id="populate_profile_bio"></span></p>
+            </div>
+        </div>
 
         <hr>
 
         <a href="post_listing.html"><button id="post_listing_bttn">New Listing</button></a>
 
-        <h2 id="active_listings">Active Listings:</h2>
+        <h2 class="h2_banner_text" id="active_listings">Active Listings:</h2>
         <div class="populate_listings_container">
-            <div id="listing1">
-                <img src="assets/images/mini_fridge.jpg" alt="Mini Fridge">
-                <h3 class="name">Mini Fridge</h3>
-                <p id="condition">Like New</p>
-                <p id="category">Kitchen</p>
-                <p id="description">Has a 2.5 cu. ft. capacity and includes a small freezer compartment. It's great for storing drinks, snacks, and leftovers. The fridge is gently used with a few minor scratches on the exterior but works perfectly. Comes with an adjustable shelf and a crisper drawer for fruits and veggies. Dimensions: 20" x 18" x 27".</p>
+            <div class="listing_box">
+                <div>
+                    <img src="assets/images/items/mini_fridge.jpg" alt="Mini Fridge">
+                </div>
+                <div>
+                    <h3 class="name">Mini Fridge</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="category">Category: Kitchen</p>
+                </div>
+                <p class="description">Has a 2.5 cu. ft. capacity and includes a small freezer compartment. It's great for storing drinks, snacks, and leftovers. The fridge is gently used with a few minor scratches on the exterior but works perfectly. Comes with an adjustable shelf and a crisper drawer for fruits and veggies. Dimensions: 20" x 18" x 27".</p>
             </div>
 
-            <div id="listing2">
-                <img src="assets/images/bear_rug.jpg" alt="Bear Rug">
-                <h3 class="name">Bear Rug</h3>
-                <p id="condition">Gently Used</p>
-                <p id="category">Decor</p>
-                <p id="description">Soft and cozy faux bear rug, great for adding a rustic or cozy vibe to your dorm room or apartment. It’s approximately 4ft x 5ft and made from durable, easy-to-clean materials. Gently used with no stains, tears, or significant wear. Perfect for lounging, studying, or just as a decorative piece!</p>
+            <div class="listing_box">
+                <div>
+                    <img src="assets/images/items/bear_rug.jpg" alt="Bear Rug">
+                </div>
+                <div>
+                    <h3 class="name">Bear Rug</h3>
+                    <p class="condition">Condition: Gently Used</p>
+                    <p class="category">Category: Decor</p>
+                </div>
+                <p class="description">Soft and cozy faux bear rug, great for adding a rustic or cozy vibe to your dorm room or apartment. It’s approximately 4ft x 5ft and made from durable, easy-to-clean materials. Gently used with no stains, tears, or significant wear. Perfect for lounging, studying, or just as a decorative piece!</p>
             </div>
 
-            <div id="listing3">
-                <img src="assets/images/desk_lamp.jpg" alt="Desk Lamp">
-                <h3 class="name">Desk Lamp</h3>
-                <p id="condition">Used</p>
-                <p id="category">Dorm Essentials</p>
-                <p id="description">Compact and adjustable desk lamp, perfect for studying or late-night reading. Features a flexible neck for easy angle adjustments and a built-in USB charging port for convenience. Emits soft, warm light that's easy on the eyes. Sturdy base and sleek design fit well in any dorm setup. Minor scuff marks on the base, but fully functional.</p>
+            <div class="listing_box">
+                <div>
+                    <img src="assets/images/items/desk_lamp.jpg" alt="Desk Lamp">
+                </div>
+                <div>
+                    <h3 class="name">Desk Lamp</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="category">Category: Dorm Essentials</p>
+                </div>
+                <p class="description">Compact and adjustable desk lamp, perfect for studying or late-night reading. Features a flexible neck for easy angle adjustments and a built-in USB charging port for convenience. Emits soft, warm light that's easy on the eyes. Sturdy base and sleek design fit well in any dorm setup. Minor scuff marks on the base, but fully functional.</p>
             </div>
         </div>
 
     </div>
+
+    <hr>
+
+    <footer>&#169; 2024, All rights reserved.</footer>
 
     <script src="scripts/auth.js"></script>
 </body>

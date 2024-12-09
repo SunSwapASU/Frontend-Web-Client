@@ -1,0 +1,34 @@
+.main_content p {
+    font-family: "MontserratBold";
+}
+
+.listing_box {
+    background-color: #4e4e4e;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 0.25em;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+.listing_box img {
+    width: 10em;
+    height: 10em;
+    border-radius: 0.25em;
+    flex: 1;
+}
+
+.listing_box>*:nth-child(2) {
+    flex: 1;
+}
+
+.listing_box>*:nth-child(3) {
+    flex: 3;
+}
+
+.listing_box .name {
+    font-family: "MontserratBold";
+    font-size: 1.5em;
+    text-decoration: underline;
+}
