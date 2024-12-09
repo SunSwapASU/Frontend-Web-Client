@@ -20,7 +20,6 @@
             <a href="index.html">Home</a>
             <a href="profile.html">Profile</a>
             <a href="discover.html">Discover</a>
-            <a href="categories.html">Categories</a>
             <a onclick="logoutUser(event)">Logout</a>
         </nav>
 
@@ -35,7 +34,6 @@
 
         <form>
             <input placeholder="First and last name" type="text" name="fullname" id="fullname">
-
             <input placeholder="Preferred contact (e.g. 4805551010 or student@email.com)" type="text" name="preferred_contact" id="preferred_contact">
             <input list="campus_list" placeholder="Home campus (e.g. Polytechnic or Tempe)" type="text" name="home_campus" id="home_campus"> <!--  dropdown -->
             <datalist id="campus_list">
@@ -49,6 +47,8 @@
             <textarea placeholder="Bio" rows="5" name="bio" id="bio"></textarea>
 
             <button type="submit" id="save_profile" onclick="saveProfile(event)">Save</button>
+
+            <p id="status_indicator"></p>
         </form>
     </div>
 

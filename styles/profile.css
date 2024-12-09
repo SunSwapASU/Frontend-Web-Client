@@ -27,3 +27,7 @@
     height: 20em;
     border-radius: 0.25em;
 }
+
+#populate_username {
+    font-family: "MontserratBoldItalic";
+}

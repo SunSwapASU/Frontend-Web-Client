@@ -20,7 +20,6 @@
             <a href="index.html">Home</a>
             <a href="profile.html">Profile</a>
             <a href="discover.html">Discover</a>
-            <a href="categories.html">Categories</a>
             <a onclick="logoutUser(event)">Logout</a>
         </nav>
 
@@ -34,13 +33,14 @@
             </div>
 
             <div>
-                <h1 class="h2_banner_text">Welcome, <span id="populate_welcome_msg_name"></span>!</h1>
+                <h1 class="h2_banner_text">Welcome, <span id="populate_username"></span>!</h1>
 
-                <p id="contact">Preferred Contact: <span id="populate_contact"></span></p>
+                <p id="full_name">Full Name: <span id="populate_full_name"></span></p>
+                <p id="contact">Preferred Contact: <span id="populate_preferred_contact"></span></p>
                 <p id="home_campus">Home Campus: <span id="populate_home_campus"></span></p>
                 <p id="major">Major: <span id="populate_major"></span></p>
                 <p id="grad_year">Graduation Year: <span id="populate_grad_year"></span></p>
-                <p id="bio">Bio: <span id="populate_profile_bio"></span></p>
+                <p id="bio">Bio: <span id="populate_bio"></span></p>
             </div>
         </div>
 
@@ -94,6 +94,7 @@
     <footer>&#169; 2024, All rights reserved.</footer>
 
     <script src="scripts/auth.js"></script>
+    <script src="scripts/profile.js"></script>
 </body>
 
 </html>

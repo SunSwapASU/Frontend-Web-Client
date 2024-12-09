@@ -62,7 +62,7 @@ async function registerSubmit(e) {
 
     if (res.ok) {
         localStorage.setItem("session_info", JSON.stringify(resp_data));
-        window.location.assign("profile.html");
+        window.location.assign("setup_profile.html");
     } else {
         status_indicator.innerText = resp_data.message;
         status_indicator.style.color = "red";
@@ -84,6 +84,8 @@ function logoutUser(e) {
             'Content-Type': 'application/json',
         },
     });
+
+    localStorage.clear();
 
     window.location.assign("login.html")
 }
