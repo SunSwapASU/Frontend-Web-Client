@@ -15,7 +15,7 @@ function saveProfile(e) {
     // status_indicator.style.color = "white";
     // status_indicator.style.display = "block";
 
-    // let res = await fetch('http://127.0.0.1:3000/user/setup_profile', {
+    // let res = await fetch('https://ssbe.brano.dev/user/setup_profile', {
     //     method: 'POST',
     //     mode: "cors",
     //     credentials: "include",
