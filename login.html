@@ -28,11 +28,11 @@
 
     <div class="form_page_container">
         <h1 class="h1_banner_text">Log in to your Swap account!</h1>
-        <form>
-            <input placeholder="Email" type="email" id="login_email">
+        <form onsubmit="loginSubmit(event)">
+            <input placeholder="Email" type="email" id="login_email" required>
             <input placeholder="Password" type="password" id="login_password" required>
 
-            <button type="submit" id="submit_button" onclick="loginSubmit(event)">Login</button>
+            <button type="submit" id="submit_button">Login</button>
 
             <p>Don't have an account? <a href="register.html">Register here!</a></p>
 

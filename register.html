@@ -28,12 +28,12 @@
 
     <div class="form_page_container">
         <h1 class="h1_banner_text">Create your Swap account!</h1>
-        <form>
+        <form onsubmit="registerSubmit(event)">
             <input placeholder="Username" type="text" id="register_username" required>
-            <input placeholder="Email" type="email" id="register_email" required>
+            <input placeholder="Email" type="email" id="register_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
             <input placeholder="Password" type="password" id="register_password" required>
 
-            <button type="submit" id="submit_button" onclick="registerSubmit(event)">Register</button>
+            <button type="submit" id="submit_button">Register</button>
 
             <p>Already have an account? <a href="login.html">Log in here!</a></p>
 

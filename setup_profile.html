@@ -32,9 +32,9 @@
             <p>Your public profile helps fellow Sun Devils learn more about you and builds trust when exchanging items. Take a minute to set it up!</p>
         </div>
 
-        <form>
-            <input placeholder="First and last name" type="text" name="fullname" id="fullname">
-            <input placeholder="Preferred contact (e.g. 4805551010 or student@email.com)" type="text" name="preferred_contact" id="preferred_contact">
+        <form onsubmit="saveProfile(event)">
+            <input placeholder="First and last name" type="text" name="fullname" id="fullname" required>
+            <input placeholder="Preferred contact (e.g. 4805551010 or student@email.com)" type="text" name="preferred_contact" id="preferred_contact" required>
             <input list="campus_list" placeholder="Home campus (e.g. Polytechnic or Tempe)" type="text" name="home_campus" id="home_campus"> <!--  dropdown -->
             <datalist id="campus_list">
                 <option value="Tempe">
@@ -46,7 +46,7 @@
             <input placeholder="Graduation year" type="number" name="grad_year" id="grad_year">
             <textarea placeholder="Bio" rows="5" name="bio" id="bio"></textarea>
 
-            <button type="submit" id="save_profile" onclick="saveProfile(event)">Save</button>
+            <button type="submit" id="save_profile">Save</button>
 
             <p id="status_indicator"></p>
         </form>

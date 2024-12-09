@@ -33,16 +33,14 @@
         </div>
 
         <form>
-            <input placeholder="Item Name" type="text" name="name" id="new_item_name">
-            <input placeholder="Condition" type="text" name="condition" id="new_item_condition">
-            <input placeholder="Category" type="text" name="category" id="new_item_category">
+            <input placeholder="Item Name" type="text" name="name" id="new_item_name" required>
+            <input placeholder="Condition" type="text" name="condition" id="new_item_condition" required>
+            <input placeholder="Category" type="text" name="category" id="new_item_category" required>
             <textarea placeholder="Detailed Description" rows="5" name="description" id="new_listing_description"></textarea>
 
-            <button id="new_listing_submit" onclick="createListing(event)">Post Listing</button>
+            <a href="profile.html"><button id="new_listing_submit">Post Listing</button></a>
         </form>
     </div>
-
-    <script src="scripts/post_listing.js"></script>
 </body>
 
 </html>
