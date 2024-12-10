@@ -32,7 +32,7 @@
             <p>Share your unused items with the ASU community! Fill out the form to create a new listing and help fellow Sun Devils</p>
         </div>
 
-        <form onsubmit="window.location.assign('profile.html')">
+        <form onsubmit="event.preventDefault(); window.location.assign('profile.html')"> <!-- inline placeholder for fetch -->
             <input placeholder="Item Name" type="text" name="name" id="new_item_name" required>
             <input placeholder="Condition" type="text" name="condition" id="new_item_condition" required>
             <input placeholder="Category" type="text" name="category" id="new_item_category" required>
