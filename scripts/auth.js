@@ -89,3 +89,11 @@ function logoutUser(e) {
 
     window.location.assign("login.html")
 }
+
+function checkAuth() {
+    let session_info = JSON.parse(localStorage.getItem("session_info"));
+
+    if (!session_info) {
+        window.location.assign("login.html");
+    }
+}
